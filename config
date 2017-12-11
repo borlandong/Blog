@@ -1,0 +1,4 @@
+Host github.com *.github.com
+    ProxyCommand connect -H proxy.arimatech.com:8080 %h %p
+    IdentityFile ~/.ssh/id_rsa
+    User git
